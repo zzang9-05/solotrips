@@ -1,0 +1,140 @@
+@charset "utf-8";
+
+#wrap figure    {
+    width: 70%;
+}
+/* header */
+header  {
+    background: darkolivegreen;
+    color: #fff;
+    padding: 25px 5% 0;
+    box-sizing: border-box;
+}
+header h1   {
+    margin-bottom: 40px;
+    font-size: 44px;
+    font-weight: 600;
+}
+header p  {
+    margin-bottom: 25px;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* gnb */
+.site_nav .gnb   {
+    display: flex;
+    justify-content: space-between;
+    width: 60%
+}
+.site_nav .gnb li   {
+    width: 15.5%;
+}
+.site_nav .gnb li a {
+    display: block;
+    padding: 12px 0;
+    background: rgba(255, 68, 0, 0.8);
+    text-align: center;
+}
+/* //header */
+
+/* contents */
+.contents    {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1280px;
+    margin: 50px auto;
+}
+.contents img   {
+    max-width: 100%;
+}
+.contents p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.contents .info_box {
+    padding: 15px;
+    background: silver;
+    border: 2px solid gray;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+}
+.contents section   {
+    width: 75%;
+}
+.contents h2    {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+.contents aside     {
+    width: 20%;
+}
+footer  {
+    border-top: 3px solid lightgrey;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/*  tablet: 567~1024 */
+@media screen and (min-width: 567px) and (max-width: 1024px)   {
+    header {
+        background: rgb(30, 63, 30);
+        padding: 25px 3% 0;
+    }
+    header h1 {
+        font-size: 36px;
+        margin-bottom: 25px;
+    }
+    .site_nav .gnb  {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .site_nav .gnb li  {
+        width: 32%;
+        margin-bottom: 1.3%;
+    }
+    .contents   {
+        flex-direction: column;
+        padding: 0 3%;
+    }
+    .contents section, .contents aside {
+        width: 100%;
+    }
+    .contents img {
+        margin-bottom: 25px;
+    }
+
+}
+
+@media screen and (max-width: 566px)   {
+    .hide   {display: none;}
+    header {
+        padding: 20px 1.5% 0;
+    }
+    header h1 {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+    .site_nav .gnb    {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .site_nav .gnb li {
+        width: 48.5%;
+        margin-bottom: 1.5%;
+    }
+    .contents {
+        padding: 0 1.5%;
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+    .contents section,
+    .contents aside {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+}

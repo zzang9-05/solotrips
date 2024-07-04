@@ -1,0 +1,85 @@
+@charset "utf-8";
+
+body {
+    font-size: 15px;
+}
+
+/* header */
+header h1 {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+header .btn_mobile {
+    top: 26px; right: 10px
+}
+header nav  {
+    position: fixed;
+    top: 80px; left: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 100;
+    display: none;
+}
+header nav .gnb {display: block;}
+header nav .gnb li a    {padding: 25px 0;}
+header nav .gnb li + li {border-top: 1px dotted #cdcdcd;}
+header nav .gnb li a:hover  {background: rgb(128, 128, 207);}
+/* visual_area  */
+#visual_area {
+    height: 45vh;
+    margin-bottom: 40px;
+}
+#visual_area .title_area {
+    width: 80%;
+}
+.title_area .title {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+/* cont_top */
+#cont_wrap {
+    max-width: 94%;
+    margin: 0 auto 40px;
+}
+.cont_top {
+    flex-wrap: wrap;
+}
+.cont_top .intro {
+    width: 55%
+}
+.cont_top .hot_place {
+    width: 40%;
+}
+.cont_top aside {
+    width: 100%
+}
+.cont_top aside figure {
+    height: 200px
+}
+.cont_bottom .event_area {
+    display: block;    
+}
+.cont_bottom .event_area > div {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+/* 420이하 */
+@media screen and (max-width: 440px) {
+    #visual_area .title_area {width: 90%}
+    .title_area .title {
+        font-size: 28px;
+        font-weight: 800;
+    }
+    .title_area .s_text {
+        display: none;
+    }
+    .cont_top .intro,
+    .cont_top .hot_place {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+}
